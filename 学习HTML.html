@@ -1,0 +1,187 @@
+<!DOCTYPE html> <!--这属于文档类型声明标签,作用是告诉浏览器使用哪种HTML版本来显示网页,
+    我们是HTML5最新版本，这个必须在HTML之前
+这个东西不属于HTML标签--> 
+<html lang="Zh-CN"><!--告诉我们网页语言，lang是langauae的缩写en是英文网页，而Zh-CN是中文
+ 我们最好用中文-->
+<head>
+    <meta charset="UTF-8"><!--charset 是字符集：多个字符的集合，是计算机可以存储和识别各种文字
+        UTF-8是万国码我们最好用这个 -->
+	<title>Hey jude</title>
+</head>
+<!-- 关于标签的使用-->
+<!--重点是标签的语义，这个标签是干什么的 -->
+<!--再合适的地方添加语义标题标签、段落标签这些都需要去学 -->
+<!--现在给那几个标签记一下
+加粗：  <strong>
+倾斜：  <em>
+删除线： <del>
+下划线： <ins>
+-->
+<!--盒子标签没有语义，用于网页的布局，装载内容
+<div>表示分割与分区，一行只可以放一个盒子,独占一行可以放很多小盒子
+<span>意为跨度跨距
+-->
+<body>
+	<h1 >我们这是一个标题</h1>
+	<a href="#列表"><h3>到达列表</h3></a>
+	<h2>这是一个二级标签</h2>
+	<!--每一个标题都是一行显示而且都只有一行标签，只要加标题都会变粗-->
+	<!--段落标签-->
+	<!--文本格式化标签，设计粗体、斜体、下划线显示重要性有几组标签-->
+	<strong>hey jude</strong><p></p>
+	<del><del>我被删除了</del></del>
+	<div>I am a excllent hezi</div>
+	<div>这是一个大盒子</div>
+	<span>相对小的盒子，用于布局与</span>
+	<span>设计更高级的小盒子</span>
+	<h4>图片标签的正常属性，有好多种：比如说：<br>
+		src:必须属性，指定文件的特性<br>
+		alt：替换文本，图像不能显示的文字<br>
+		title：提示文本，鼠标放到图像上，显示的文字<br>
+		width：设置图像的宽度<br>
+		height：设置图像的高度<br>
+		border：设置图像的边框粗细<br> 
+	</h4>
+	<h3>这是图片的用法：</h3>
+	<img src="images/0df431adcbef760928c1af5820dda3cc7dd99e2a.jpg"/>
+	<h3>这是图片alt的用法：</h3>
+	<img src="images/0df431adcbef760928c1af5820dda3cc7dd99e2a.jpg" alt="梅西2015获得金球奖"/>
+	<h3>这是图片title的用法：</h3>
+	<img src="images/0df431adcbef760928c1af5820dda3cc7dd99e2a.jpg" title="里奥·梅西" height="1000px" width="1000px" border="15"/>
+	<!--宽度与高度是可以等比例缩放的，所以通常来说我们是只修改高度或宽度，而不是两个都修改-->
+	<h3></h3>
+	<!--src是<img>标签的必须属性，它用于指定文件图像的特性-->
+	<h3>关于图片路径问题：<br>
+		<h4>1.相对路径</h4>
+		<h4>2.绝对路径</h4>
+		相对路径：以图片相对HTML页面的位置为参考<br>
+		绝对路径：就是以盘符为路径的直达目标位置！！但是一般不这么用<br>
+		<p>还有一种常用的绝对路径，就是网页绝对路径，把网页某个插图用来把地址复制下来，然后就再放到我们的src里
+			<br>这样一来我们只需电脑可以上网就可以得到这个图片<br>
+			例子如下：<br>
+            <img src="https://www.baidu.com/img/dong_5a30169b33012332baafb15938f6f19f.gif" alt="连接互联网之后图片才可以显示！！！"> 
+	
+		</p>
+	<img src="images/范特西_109951163076302925.jpg" height="200" border="800" />
+	<img src="../03b82c03186cc05994d1686ff375ea3.jpg" border="490px" />
+ 	
+	</h3>
+	<p><ins>你知道，就算大雨让整座城市倾倒我会给你怀抱，受不了看到你背影来到，</ins></p>
+	<p>写下我，度秒如年难耐的离骚</p>
+	don't make you fa
+	make your day 
+	you go and get her<p>
+	接下来超极重要的一点！！！<br>
+	<h3>我们的网址是如何跳转的呢？这恐怕是非常重要的一点了吧</h3>
+	<h3>这就要靠我们所熟知的超链接跳转来实现了：
+		<a>标签可以来定义超链接，作用实现页面的跳转
+	</h3>
+	<h2>注意！！我们的target默认是覆盖当前的跳转（_self），而我们通常要新窗口打开也就是：（_blank）</h2>
+	<a href="http://www.baidu.com" target="_blank">打开百度 </a>
+	<!--这是我们的外部链接-->
+	<h4>再说一次，注意这个与根目录用网站链接找图片形成对比！！</h4>
+	<p>href用于指定地址，而target用于跳转类型</p>
+	<!--你想要的图片超链接来了！！！哈哈啊哈-->
+	<a href="http://www.baidu.com" target="_blank"><img src="images/八度空间_18715886930028449.jpg" border="34"></a>
+	<h3>除了外部链接，还有内部链接哦，这便是你要格外注意的一项这一点很重要</h3>
+	<!--内部链接比外部链接还简单，这个不需要http://……-->
+	<h3>例子如下：</h3>
+	<a href="Untitled-1.html"><img src="images/Jay 同名专辑_7946170535396804.jpg" border="28" height="80"></a>
+	<h1>效果非常好！！！</h1>
+	remember to let you in<br><!--强制换行！！但是不分段落--> your heart
+	you make your day
+	so it can touch you</p>
+    <img src="images/八度空间_18715886930028449.jpg"  />
+	<h3>还有一种为空链接，这个东西在做大框架的时候是比较有用的，可以有效先画框架！！</h3>
+	<a href="#">空链接</a><!--可以提高效率哦-->
+	<h3>还有一种为下载链接这也是很重要的，我们网上下东西一般都是下这些压缩包.exe、.zip等</h3>
+	<h4>地址链接的是文件.exe .zip</h4>
+	<h4>例子如下：点开就直接下载了</h4>
+	<a href="个人简介（1页）.zip"><img src="images/范特西_109951163076302925.jpg" title="这是个人简介的下载链接"></a>
+    <h3>图片、文字、表格、还有音频视频都可以添加超链接的，这些都没问题</h3>
+	<h3>最后一种链接：锚点链接！！</h3>
+	<h4>这指的就是我们的在本页面之内跳转，这都是我们经常见到的所以我们应该要注意学会掌握</h4>
+	<h4>怎么做呢，就用这个顺便联系一下连接内部链接！</h4>
+	<h4>首先不变的是打出链接的格式，在href后设置属性值为为“#名字”的形式</h4>
+	<a href="他是……JJ林俊杰.html"><h1>林三岁的个人简介！</h1></a>
+	<!--祝你成功！！-->
+	<h3>HTML中的特殊字符与注释！</h3>
+	<h4>我们的注释标签是有快捷键的，如果想要快捷键那么就用ctrl+/这样一来就可以把一行全都注释掉</h4>
+	<h4>还有一个特殊字符的问题，我们常用的有如下：</h4>
+	空格：&nbsp;<br>
+	大于号：&lt;<br>
+	小于号：&gt;<br>
+	注册商标：&reg;<br>
+	版权：&copy;<br>
+
+
+	<h1>接下来学习HTML（下）标签了！！</h1>
+	<h2>关于表格表单标签的运用与执行</h2>
+	<h2>表格的作用是为了显示表示数据还有布局页面来用</h2>
+	<h3>基本语法如下：</h3>
+    <table>
+		<!-- table 用来表示这是一个表格,定义表格的标签 -->
+		<tr>
+		<!-- 定义表格中的行  -->
+			<td>
+             <!-- 用来定义我们的单元格 -->
+			</td>
+		</tr>
+	</table>
+    <a href="学习表格.html" target="_blank" ><font color=#7004>学习表格</font></a>
+
+    <h2 id="列表">除了表格标签，就是列表标签</h2>
+	<h3><font color="#ffcc09">列表标签可是专门用于布局的</font></h3>
+	<a href=""></a>
+	<h2>接下来就学表单咯！</h2>
+	<h3>表单就是为了收集用户信息</h3>
+	<p>为了更好的交互效果就行</p>
+	<h3>在HTML之中，一个完整的表单通常由表单域、表单控件、提示信息三部分构成</h3>
+	<h4>表单域就是那个表单所在的框，表单控件就是我们用户要填的那个长条，提示信息就是那个告诉我们要填什么的东西</h4>
+	<h4>通常在注册界面等等界面用于收集信息</h4>
+	表单域可以把它的结果送到后台，就利于收集结果<br>
+	用于包含结果<br>
+	<p>表单元素就是表单控件：允许用户在页面里选择或输入文件的控件</p>
+	<p>主要就分为几类：input 输入表单元素  select：下拉表单元素 textarea：文本域表单元素</p>
+	<ol>
+		<li>input 输入表单元素</li>
+		<li>select：下拉表单元素</li>
+		<li>textarea：文本域表单元素</li>
+	</ol>
+	<h4>先看我们的input表单元素</h4>
+	input的标签必须有type这个属性值，这代表我们可以用哪种来进行运用实现表单元素<br>
+	name 也是一个很重要的属性，我们可以以name来区分不同的元素。name是表单元素的名字<br>
+	<font color="#ffcc09">所以我们就必须让性别单选按钮具有相同的名字，这样才可以实现多选一</font>
+	<p>但是如果是复选框checkbox,那么就还是可以多选</p>
+	value也是一个属性，就是刚打开文件就呈现到我们的框内，等传到后台后我们后台人员就可以看到值了<strong>主要针对我们后台人员</strong><br>
+	checked就是那种你一打开页面自动给你选中了，这个经常在我们同意某项条款时<br>
+	maxlength就是那种你打开页面最多输入的字符长度，我们输入框text默认是20 <br>
+	submit就是提交按钮，提交按钮可以把表单数据发送到服务器，把表单域的值提交过去<br>
+	reset就是一个可以清空表单所有数据，重置为初始值的一种属性<br>
+	<p>button就是一个普通按钮，我们通常会比如获取短信验证码、连接其他之类的东西都可以,常结合javascript使用</p>
+	<br>file是可以上传文件，比如头像，文件等等
+	<form action="url地址（就是结果提交的网址）" method="提交方式" name="表单域名称">
+		密码：<input type="password" name="username" value="lskflsf" maxlength="5">
+		我才懒得给你解药：<input type="text" name="" id="" value="sacklcsjclksjjslkj">
+		<input type="button" name="niksl" id=""><br>
+		<!-- 注意这可是一个单标签的元素哦 -->
+		性别：男<input type="radio" name="性别" id="">女<input type="radio" name="性别" id="" checked="checked"><br>
+		爱好：数列<input type="checkbox" name="1" id="" checked="checked"> 线代<input type="checkbox" name="1" id=""> 微积分<input type="checkbox" name="1" id=""> 
+	   <br> <input type="submit" name="" id="" value="免费注册">
+	   <p><input type="reset" name="" id="" value="重置按钮"></p>
+	   <p></p>
+	   上传头像：<input type="file" name="" id="" value="">
+	   <h3>插入一个label标签，因为常与input 一起使用所以先在这儿说一下</h3>
+
+
+	   
+
+	</form>
+	
+
+
+     
+
+
+</body>
+</html>
